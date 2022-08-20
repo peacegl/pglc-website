@@ -19,47 +19,7 @@ use Illuminate\Support\Facades\Validator;
 use DB;
 
 class ViewController extends Controller
-{
-	protected $company;
-	protected $slider;
-    protected $service;
-    protected $blog;
-    // protected $customer;
-    protected $contact;
-    // protected $airwinslider;
-    // protected $airwincompany;
-    // protected $airwinservice;
-    // protected $airwincontact;
-
-    public function __construct(
-        Company $company,
-        Slider $slider,Service $service,
-        Blog $blog,
-        Contactus $contact,
-        Career $career
-        // AirwinSlider $airwinslider,
-        // AirwinContactus $airwincontact,
-        // AirwinCompany $airwincompany,
-        // AirwinService $airwinservice
-        ){
-    	$this->company=$company;
-        $this->slider=$slider;
-        $this->service=$service;
-        $this->blog=$blog;
-        // $this->customer=$customer;
-        $this->contact=$contact;
-    	$this->career=$career;
-    // 	$this->airwinslider=$airwinslider;
-    //     $this->airwincompany=$airwincompany;
-    //     $this->airwinservice=$airwinservice;
-    //     $this->airwincontact=$airwincontact;
-    }
-
-
-
-
-
-    
+{    
     // airwin shipping llc section 
 
     function airewin_shipping_line(){
