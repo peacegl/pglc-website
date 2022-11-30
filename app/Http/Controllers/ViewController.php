@@ -40,7 +40,7 @@ class ViewController extends Controller
         // $service=$this->airwinservice->getService();
         // $noimageservice=$this->airwinservice->getNoImageService();
          $company=DB::table('airwin_company')->first();
-         $slider=DB::table('cars_slideshows')->orderBy('id','asc')->get();
+         $slider=DB::table('airwin_slideshows')->orderBy('id','asc')->get();
          $service=DB::table('airwin_services')->where('image','!=','')->get();
          $noimageservice=DB::table('airwin_services')->whereNull('image')->get();
         return view('website1.cars')->with(['company'=>$company,'slider'=>$slider,'service'=>$service,'noimageservice'=>$noimageservice]);
