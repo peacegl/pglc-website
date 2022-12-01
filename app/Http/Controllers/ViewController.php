@@ -28,7 +28,7 @@ class ViewController extends Controller
         // $service=$this->airwinservice->getService();
         // $noimageservice=$this->airwinservice->getNoImageService();
          $company=DB::table('airwin_company')->first();
-         $slider=DB::table('airwin_slideshows')->orderBy('id','desc')->get();
+         $slider=DB::table('cars_slideshows')->orderBy('id','desc')->get();
          $service=DB::table('airwin_services')->where('image','!=','')->get();
          $noimageservice=DB::table('airwin_services')->whereNull('image')->get();
         return view('website1.index')->with(['company'=>$company,'slider'=>$slider,'service'=>$service,'noimageservice'=>$noimageservice]);
